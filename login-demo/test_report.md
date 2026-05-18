@@ -1,22 +1,39 @@
+
 # Automated Test Report
 
-Generated Time: 2026-05-05 15:25:21.770667
+Generated automatically
 
-## PRD Rule
-Username length must be greater than 6 characters.
+-----------------------------------
 
-## Test Results
+PRD Rule:
 
-### TC_REG_001 - Username length should be greater than 6 characters
-- Input: {'username': 'abc123', 'password': '12345678'}
-- Expected Status: 400
-- Actual Status: 200
-- Actual Response: {'message': 'Register success'}
-- Result: FAIL
+Username length > 6
 
-## Auto Generated Bug
-- Bug Title: Registration allows username shorter than required length
-- Severity: High
-- Description: According to the PRD, the username length must be greater than 6 characters. However, the system allows registration with username 'abc'.
-- Expected Result: Registration should fail because username length is not greater than 6.
-- Actual Result: Status Code: 200, Response: {'message': 'Register success'}
+-----------------------------------
+
+Test Results:
+
+TC_REG_001 : FAIL
+TC_REG_002 : FAIL
+TC_REG_003 : PASS
+
+-----------------------------------
+
+Auto Generated Bugs:
+
+BUG_TC_REG_001
+Severity: HIGH
+
+BUG_TC_REG_002
+Severity: HIGH
+
+-----------------------------------
+
+Conclusion:
+
+System violates PRD constraints.
+
+Registration module allows invalid username length.
+
+Auto bug generation successful.
+

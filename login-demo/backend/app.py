@@ -23,7 +23,7 @@ def register():
     if not username:
         return jsonify({"error": "Username is required"}), 400
 
-    # ❗❗❗ Intentional Bug ❗❗❗
+    # Intentional Bug 
     # PRD要求：用户名长度必须 > 6
     # 这里故意不校验
 

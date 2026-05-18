@@ -1,0 +1,9 @@
+[
+    {
+        "module": "register",
+        "field": "username",
+        "type": "validation",
+        "rule": "length_greater_than 6",
+        "risk": "Invalid input accepted"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "bug_id": "BUG_TC_REG_002",
+        "title": "Registration allows username shorter than PRD rule",
+        "severity": "HIGH",
+        "related_case": "TC_REG_002",
+        "expected": 400,
+        "actual": 200,
+        "response": {
+            "message": "Register success"
+        },
+        "description": "PRD requires username length > 6, but the system still allows registration."
+    }
+]
